@@ -1,0 +1,11 @@
+First line!
+
+hello $(p ${WORLD:-world})!
+
+$(true) \$(true)
+
+$(x=$(seq -w 10); readarray s <<<"$x"; for a in "${s[@]}"; do p "- $a"; echo ""; done)
+
+Smörgåsägg
+
+EOF
